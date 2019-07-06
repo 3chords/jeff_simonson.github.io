@@ -16,13 +16,67 @@
 
 <body>
 
-  <div>
-  <!-- Bring in the image of the Temperature vs. Latitude-->
-  <img src="resources/lat_vs_temperature.jpg" class="img-fluid" alt="Responsive image">
-  </div>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">the.data.dive</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="#">Data <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Comparison</a>
+          </li>
+          <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+          </li>
+          </ul>
+      </div>
+  </nav>
+  
+  
+ 
+  
+  <!-- First Row -->
+  <div class="row">
 
-  <div>
-    <p> Blurb about temperature vs. latitude.</p>
+      <!-- First (and only column) -->
+      <div class="col-md-12" justify-content-between>
+        <h5>Findings...</h5>
+      </div>
+    </div>
+
+  <div class="row">
+
+    <!-- First of two columns -->
+    <div class="col-xs-2">
+    </div>
+     
+    <div class="col-s-6" justify-content-between>
+      <img src="resources/lat_vs_temperature.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <!-- Second of two columns -->
+    <div class="col-s-4" justify-content-between>
+        <p> Of the four scatter plots, the only chart where a relationship 
+            exists with latitude is temperature. <br> <br> The inverted U shape of the data 
+            suggests as you get closer to zero (the equator) the temperature tends to rise. 
+            And as you work closer to the poles (+/- 60 degrees latitude) the temperatures drop.
+            In the northern hemisphere the temperatures stay elevated around the 
+            20 degrees north mark but there is visual separation around 30 degrees 
+            where temperatures drop off. The same separation for the southern hemisphere occurs 
+            around the -25 degrees (south) mark.</p>
+    </div>
   </div>
 
 </body>
